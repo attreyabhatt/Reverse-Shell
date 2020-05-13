@@ -45,6 +45,7 @@ def send_commands(conn):
     while True:
         cmd = input()
         if cmd == 'quit':
+            conn.send(str.encode('sys.exit()'))         # Ensuring Client Terminal is also closed
             conn.close()
             s.close()
             sys.exit()
