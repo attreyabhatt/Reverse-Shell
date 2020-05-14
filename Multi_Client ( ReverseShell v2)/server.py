@@ -104,7 +104,7 @@ def list_connections():
             del all_address[i]
             continue
 
-        results = str(i) + "   " + str(all_address[i][0]) + "   " + str(all_address[i][1]) + "\n"
+        results += str(i) + "   " + str(all_address[i][0]) + "   " + str(all_address[i][1]) + "\n"
 
     print("----Clients----" + "\n" + results)
 
