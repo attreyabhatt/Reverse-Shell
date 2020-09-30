@@ -8,8 +8,8 @@ def create_socket():
         global host
         global port
         global s
-        host = ""
-        port = 9999
+        host = input("Enter the IP: ")
+        port = int(input("Enter the Port: ")
         s = socket.socket()
 
     except socket.error as msg:
